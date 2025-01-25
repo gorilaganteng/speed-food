@@ -1,0 +1,302 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 200ms ease-out;
+    scroll-behavior: smooth;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+body{
+    background: #323643;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+header{
+    margin-left: 6%;
+    margin-right: 6%;
+    position: fixed;
+    top: 1.5rem; left: 0; right: 0;
+    background: #FF7517;
+    border-radius: 30px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .5rem 1rem black;
+    z-index: 1000;
+}
+
+header .logo{
+    position: relative;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 1.8rem;
+    color: black;
+    text-decoration: none; 
+    letter-spacing: 1px;
+    vertical-align: middle;
+}
+
+header .logo span{
+    color: #F2F2F2;
+}
+
+header .menu a{
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    vertical-align: middle;
+}
+header .menu a:hover{
+    color: #F2F2F2;
+    transition: .3s ease;
+}
+
+header .icon-nav{
+    font-size: 1.2rem;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+header .icon-nav i{
+    font-size: 1.5rem;
+}
+header .icon-nav i:hover{
+    color: #F2F2F2;
+    filter: drop-shadow(0 0 1rem #F2F2F2);
+    transition: 0.3s ease;
+}
+header .icon-nav a{
+    margin-left: 10px;
+    text-decoration: none;
+    background-color: #323643;
+    padding: .8rem;
+    border-radius: 18px;
+    color: #F2F2F2;
+}
+header .icon-nav a:hover{
+    box-shadow: 0 0 1rem #F2F2F2;
+    color: black;
+    background-color: #F2F2F2;
+    transition: 0.3s ease;
+}
+
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size: 2rem;
+    color: #323643;
+    cursor: pointer;
+    display: none;
+}
+.container {
+
+    margin-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    height: 100%;
+}
+.product-images {
+    flex: 1 1 55rem;
+    max-width: 40%;
+    height: 100%;
+    padding: 12rem 3rem;
+    background-color: #60647048;
+    border-radius: 2rem;
+}
+.product-images img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.product-details {
+    flex: 1 1 55rem;
+    max-width: 60%;
+    height: 100%;
+    padding: 14rem 4rem;
+}
+.product-details h1 {
+    color: #FF7517;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+.product-details h1 span{
+    color: #999;
+    font-size: 3rem;
+}
+.product-details .color, 
+.product-details .rasa,
+.product-details .harga,
+.product-details .offer, 
+.product-details .stock, 
+.product-details .tombol {
+    margin-bottom: 2rem;
+}
+
+.product-details .rasa span,
+.product-details .harga span,
+.product-details .offer span, 
+.product-details .stock span {
+    display: block;
+    margin-bottom: 1rem;
+}
+.product-details .rasa div {
+    display: flex;
+    gap: 1rem;
+}
+.product-details .rasa span{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #F2F2F2;
+}
+
+.product-details .rasa div span {
+    color: #F2F2F2;
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: .3rem .7rem;
+    border: .15rem solid #F2F2F2;
+    cursor: pointer;
+}
+.product-details .rasa div span:hover{
+    background: #999;
+}
+.product-details .harga p {
+    color: #999;
+    font-size: 1.5rem;
+}
+.product-details .harga span {
+    color: red;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.product-details .offer {
+    color: red;
+    font-size: 1.5rem;
+}
+.product-details .stock {
+    vertical-align: middle;
+    display: flex;
+    gap: 1rem;
+}
+
+.product-details .stock span {
+    font-size: 1.5rem;
+    padding: .4rem;
+    color: #F2F2F2;
+    text-align: center;
+}
+.product-details .stock .stok {
+    font-size: 1.5rem;
+    padding: .4rem;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #F2F2F2;
+}
+.product-details .tombol{
+    display: flex;
+    gap: 3rem;
+}
+.product-details .tombol .pesan {
+    text-align: center;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #FF7517;
+    border: none;
+    cursor: pointer;
+}
+.product-details .tombol .pesan:hover{
+    background-color: #ff74174f;
+}
+.product-details .tombol .pesan a{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #F2F2F2;
+}
+.product-details .tombol .keranjang {
+    text-align: center;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #FFD700;
+    border: none;
+    cursor: pointer;
+}
+.product-details .tombol .keranjang:hover{
+    background-color: #ffd90045;
+}
+.product-details .tombol .keranjang a{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #000 ;
+}
+.product-details .rating {
+    font-size: 1.5rem;
+    padding-top: -1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.product-details .rating i {
+    color: #FFD700;
+}
+.product-details .rating span {
+    color: #F2F2F2;
+}
+
+
+
+@media (max-width: 991px){
+    .product-images {
+        /* margin: 0 1rem; */
+       max-width: 75%;
+       padding: 2rem 0;
+    }
+    .product-images img{
+      padding: 3rem;
+    }
+    .product-details {
+        max-width: 100%;
+        padding: 2rem;
+    }
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-images{
+        margin: 0 2rem;
+        max-width: 80%;
+    }
+    .product-details {
+        max-width: 100%;
+    }
+}
